@@ -7,6 +7,21 @@ body
 	padding: 0
 	margin: 0
 
+/* Helper Class */
+
+.position__relative
+	position: relative
+
+.position__horizontal
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 80%
+
+.Font__Bitter
+	font-family: 'Bitter', serif
+
 hr 
 	margin: .5rem 0
 	
@@ -27,31 +42,106 @@ hr
 	
 .p-2
 	padding: 2em
+
+.has-margin-top-40
+	margin-top: 40px
+
+.has-margin-top-70
+	margin-top: 58px
+
+.has-padding-top-100
+	padding-top: 100px
 	
 .hero_header
 	background-image: url("../image/hero-header.jpg")
 	background-repeat: no-repeat
 	background-size: cover
-	background-position: center center
-	min-height: 680px
+	background-position: bottom center
+	min-height: 550px
+
+@media (min-width: 768px)
+	.text-section
+		padding-left: 20vw
+		padding-right: 20vw
 	
+.overlay
+	position: absolute
+	left: 25px
+	bottom: 25px
+	width: 80%
+
+.overlay
+	h5, p
+		text-shadow: 1px 0 5px #000000
+
+.overlay
+	a.button
+		margin-top: 10px
+
+.navbar-burger.burger
+	padding: 13px
+
+.navbar-menu
+	min-height: 70px
+	box-shadow: 0 0 10px #cccccc
+
+.center_logo_position
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+@media(min-width:1088px)
+	.navbar-brand
+		display: none
+
 .hero_men
 	background-image: url("../image/hero-men.jpg")
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center center
-	min-height: 690px
-	
-.hero_bag
-	background-image: url("../image/hero-bag.jpg")
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center center
-	min-height: 680px
+	min-height: 500px
 	
 .hero_women
 	background-image: url("../image/hero-women.jpg")
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center center
-	min-height: 900px
+	min-height: 600px
+
+/* Slider */
+
+.slick-active
+	opacity: 0.15
+	position: relative
+	padding-top: 15px
+
+.slick-current.slick-active
+	opacity: 1
+
+.slick-active:before
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	content: ''
+	border-top: 1px solid transparent
+	height: 1px
+	width: 30%
+	background: transparent
+
+.slick-current.slick-active:before
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	content: ''
+	border-top: 1px solid #000000
+	height: 1px
+	width: 40%
+	background: #000000
+
+.slick-slider img
+	margin: auto
