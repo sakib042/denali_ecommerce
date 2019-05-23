@@ -6715,16 +6715,11 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-body {
-  font-size: 0.9em;
-  padding: 0;
-  margin: 0; }
-
 /* Helper Class */
-.position__relative {
+.position--relative {
   position: relative; }
 
-.position__horizontal {
+.position--vertical-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6734,36 +6729,51 @@ body {
 .Font__Bitter {
   font-family: "Bitter", serif; }
 
+.has--text-color-grey {
+  color: #9a9a9a; }
+
 hr {
   margin: 0.5rem 0; }
 
-.is-fullwidth {
+.is--fullwidth {
   width: 100% !important; }
 
-.has-borderrediuszero {
-  border-radius: 0; }
+.is--borderless {
+  border: 0; }
 
-.has-background-transparent {
+.has--background-transparent {
   background: transparent; }
 
-.p-05 {
+.has--background-black {
+  background: black; }
+
+.padding--05 {
   padding: 0.5em; }
 
-.p-1 {
+.padding--1 {
   padding: 1em; }
 
-.p-2 {
+.padding--2 {
   padding: 2em; }
 
-.has-margin-top-40 {
+.has--margintop-40 {
   margin-top: 40px; }
 
-.has-margin-top-70 {
-  margin-top: 58px; }
+.has--margintop-70 {
+  margin-top: 40px; }
 
-.has-padding-top-100 {
+.has--paddingtop-100 {
   padding-top: 100px; }
 
+.button {
+  padding: 1.3em 2em; }
+
+.has--textshadow-white {
+  text-shadow: 0px 0px 5px #f2f2f2; }
+
+@media (min-width: 1088px) {
+  .has--margintop-70 {
+    margin-top: 58px; } }
 .hero_header {
   background-image: url("../image/hero-header.jpg");
   background-repeat: no-repeat;
@@ -6775,49 +6785,7 @@ hr {
   .text-section {
     padding-left: 20vw;
     padding-right: 20vw; } }
-.overlay {
-  position: absolute;
-  left: 25px;
-  bottom: 25px;
-  width: 80%; }
-
-.overlay h5, .overlay p {
-  text-shadow: 1px 0 5px #000000; }
-
-.overlay a.button {
-  margin-top: 10px; }
-
-.navbar-burger.burger {
-  padding: 13px; }
-
-.navbar-menu {
-  min-height: 70px;
-  box-shadow: 0 0 10px #cccccc; }
-
-.center_logo_position {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-@media(min-width:1088px) {
-  .navbar-brand {
-    display: none; } }
-.hero_men {
-  background-image: url("../image/hero-men.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 500px; }
-
-.hero_women {
-  background-image: url("../image/hero-women.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 600px; }
-
-/* Slider */
+/* Logo Slider */
 .slick-active {
   opacity: 0.15;
   position: relative;
@@ -6852,5 +6820,82 @@ hr {
 
 .slick-slider img {
   margin: auto; }
+
+.hero_men {
+  background-image: url("../image/hero-men.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px; }
+
+.hero_women {
+  background-image: url("../image/hero-women.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px; }
+
+.overlay {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  width: 80%; }
+
+.overlay h5, .overlay p {
+  text-shadow: 1px 0 5px #000000; }
+
+.overlay a.button {
+  margin-top: 10px; }
+
+body {
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0; }
+
+/* Override Style */
+.navbar-burger.burger {
+  padding: 13px; }
+
+.navbar-menu {
+  min-height: 70px;
+  box-shadow: 0 1px 10px #cccccc; }
+
+@media(min-width:1088px) {
+  .navbar-brand {
+    display: none; } }
+/* Logo */
+.center_logo_position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+@media(max-width:1087px) {
+  .center_logo_position {
+    display: none; } }
+.field.newsletter {
+  max-width: 300px !important; }
+
+/* Placeholder Color */
+input::-webkit-input-placeholder {
+  color: #9a9a9a !important;
+  font-size: 14px;
+  top: -4px;
+  position: relative; }
+input:-moz-placeholder {
+  color: #9a9a9a !important;
+  font-size: 14px;
+  top: -4px;
+  position: relative; }
+input::-moz-placeholder {
+  color: #9a9a9a !important;
+  font-size: 14px;
+  top: -4px;
+  position: relative; }
+input:-ms-input-placeholder {
+  color: #9a9a9a !important;
+  font-size: 14px;
+  top: -4px;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

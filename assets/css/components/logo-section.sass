@@ -1,0 +1,36 @@
+/* Logo Slider */
+
+.slick-active
+	opacity: 0.15
+	position: relative
+	padding-top: 15px
+
+.slick-current.slick-active
+	opacity: 1
+
+.slick-active:before
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	content: ''
+	border-top: 1px solid transparent
+	height: 1px
+	width: 30%
+	background: transparent
+
+.slick-current.slick-active:before
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	content: ''
+	border-top: 1px solid #000000
+	height: 1px
+	width: 40%
+	background: #000000
+
+.slick-slider img
+	margin: auto
